@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body id="demo">
+    <p ></p>
+    <button class="btn" onclick="dark()">dark</button>
+    <!-- project start -->
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add a new test...">
+    <button id="addBtn">Add</button>
+    <ul id="taskList">
+        <!-- <li>task1 <button id="dleteBtn">Delete</button></li>
+        <li>task2 <button id="dleteBtn">Delete</button></li>
+        <li>task3 <button id="dleteBtn">Delete</button></li> -->
+    </ul>
+    <script src="style.js"></script>
+</body>
+</html>
