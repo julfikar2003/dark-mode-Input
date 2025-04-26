@@ -26,7 +26,7 @@ function dark(){
     taskList.appendChild(li);
     input.value="";
     li.addEventListener("click",()=>completeTask(li));
-    li.querySelector("#dleteBtn").addEventListener("click",()=> deleteEvent(li))
+    li.querySelector("#dleteBtn").addEventListener("click",(e)=> deleteEvent(e,li))
     // console.log(task)
  }
  function completeTask(li){
@@ -34,8 +34,9 @@ function dark(){
     li.style.color="red"
  // console.log(li)
  }
- function deleteEvent(li){
-    
+ function deleteEvent(e,li){
+    e.stopPropagation();
     li.remove()
+   
  }
  // console.log(input,addBtn,taskList)
